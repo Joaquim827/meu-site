@@ -260,6 +260,11 @@ main > section {
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
+.social-icons a[aria-label="Email"] {
+  min-width: 66px;
+  white-space: nowrap;
+}
+
 .social-icons a:hover {
   transform: translateY(-2px);
   background: var(--primary-strong);
@@ -410,6 +415,9 @@ main > section {
 .skill-icon {
   width: 42px;
   height: 42px;
+  max-width: 42px;
+  max-height: 42px;
+  flex: 0 0 42px;
   margin-bottom: 18px;
   object-fit: contain;
 }
