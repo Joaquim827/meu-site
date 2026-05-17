@@ -247,8 +247,9 @@ main > section {
 }
 
 .social-icons a {
-  width: 44px;
+  min-width: 44px;
   height: 44px;
+  padding: 0 12px;
   display: grid;
   place-items: center;
   border: 1px solid #26324c;
@@ -404,6 +405,13 @@ main > section {
   border-radius: var(--radius);
   background: linear-gradient(180deg, rgba(18, 26, 46, 0.94), rgba(13, 19, 36, 0.72));
   transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.skill-icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 18px;
+  object-fit: contain;
 }
 
 .skill:hover,
