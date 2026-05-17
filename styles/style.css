@@ -457,11 +457,34 @@ main > section {
   transition: transform 0.35s ease;
 }
 
+.project-preview {
+  overflow: hidden;
+  min-height: 250px;
+  aspect-ratio: 16 / 10;
+  background: var(--surface-strong);
+  border-bottom: 1px solid var(--line);
+}
+
+.project-preview iframe {
+  min-height: 250px;
+  border: 0;
+  width: 128.205%;
+  height: 128.205%;
+  transform: scale(0.78);
+  transform-origin: top left;
+  pointer-events: none;
+  transition: transform 0.35s ease;
+}
+
+.project-card:hover .project-preview iframe {
+  transform: scale(0.8);
+}
+
 .project-card:hover img {
   transform: scale(1.04);
 }
 
-.project-card div {
+.project-card > div:not(.project-preview) {
   padding: 22px;
 }
 
